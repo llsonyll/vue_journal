@@ -1,5 +1,5 @@
 .<template>
-  <button class="btn pointer btn-primary">
+  <button class="btn pointer btn-primary" @click="$emit('on-click')">
     <!-- <i :class="`fa fa-2x ${icon}`"></i> -->
     <i class="fa fa-2x" :class="icon"></i>
   </button>
@@ -14,6 +14,11 @@ export default {
       required: true,
     },
   },
+  // methods: {
+  //   handleEmit() {
+  //     this.$emit("on-click");
+  //   },
+  // },
 };
 </script>
 
